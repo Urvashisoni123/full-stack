@@ -1,56 +1,7 @@
-/* Define the global or root variables */
-/* :root{
-    --primaryColor:#AA77FF;
-    --backgroundColor:#E6FFFD;
-    --primaryAccentColor:#AEE2FF;
-    --secondaryColor:#B799FF;
-    --whiteColor: white;
-    --blackColor: black;
-    --primaryFont:'Open Sans',sans-serif;
-    --navBarHeight: 3rem;
-}
-body{
-    background-color: var(--backgroundColor);
-    color: var(--primaryColor);
-    font-family: var(--primaryFont);
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-.navigation{
-    height: var(--navBarHeight);
-    background-color: var(--whiteColor);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 
-}
-.logo{
-    display: flex;
-    padding-left:  20px;
-    width: 12rem;
-    align-items: center;
-}
-.logoImage{
-    padding: 8px;
-    height: 2rem;
-    /* float: left; */
-
-/* }
-.contactImage{
-    padding: 8px;
-    height: 2rem;
-    
-}
-.menuitems{
-    flex-grow: 2;
-}
-.menuitem{
-    margin-left: 20px;
-} */ 
 
 /* Define The global or root variables */
-:root{
+ :root{
     --primaryColor :#213555;
     --backgroundColor :#F5EFE7;
     --primaryAccentColor :#4F709C;
@@ -58,18 +9,26 @@ body{
     --whiteColor:white;
     --blackColor:#222222;
     --primaryFont: 'Open Sans', sans-serif;
+    --cursiveFont:'Pacifico',cursive;
 
     --navbarHeight: 3rem;
 }
 
 /* Main CSS */
-body{
+ body{
     background-color: var(--backgroundColor);
     color: var(--primaryColor);
     font-family: var(--primaryFont);
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
+}
+a {
+    text-decoration: none;
+    color: var(--primaryColor);
+}
+a:hover{
+    color: var(--primaryAccentColor);
 }
 
 .navigation{
@@ -78,6 +37,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    filter: drop-shadow(0px 3px 4px grey);
 }
 .logo{
     display:flex;
@@ -90,13 +50,65 @@ body{
     height: 2rem;    
     /* float:left; */
 }
-.contactImage{
+ .contactImage{
     padding: 8px;
-    height: 2rem;  
+    height: 2rem; 
+    margin-right: 30px; 
 }
 .menuitems{
     flex-grow:2;
 }
 .menuitem{
     margin-left: 20px;
+}  
+
+.banner {
+    display: flex;
+    height: 450px;
+    background: linear-gradient( 45deg , var(--primaryAccentColor) , var(--secondaryColor),var(--backgroundColor));
+     filter: drop-shadow(0px 3px 4px grey);/* x ,y, radius */
+     justify-content: space-around;
+     align-items: center;
+     padding: 20px;
+ }
+ .bannerLeft {
+    width: 50%
+ }
+
+ 
+
+.bannerImage {
+    height: 200px;
+    border-radius: 100%;
+}
+
+.greeting {
+    font-family: var(--cursiveFont);
+    font-size: 40px;
+}
+.title {
+   
+    font-size: 2.5rem;
+    color:#F5EFE7;
+    
+}
+
+.titleSpan {
+    display: inline-block;
+    background-color: var(--primaryAccentColor);
+    padding: 0.5rem;
+    margin: 5px 0px;
+}
+.description {
+    margin: 30px 0px;
+    line-height: 2rem;
+}
+.showCVButton {
+   background: linear-gradient(white , rgb(213, 206, 206) , rgb(150, 147, 147));
+   padding: 10px 15px;
+   border-radius: 5px;
+   filter: drop-shadow(5px 5px 3px grey);
+}
+.showCVButton:hover {
+    background:linear-gradient( white , rgb(215,215,215));
 }
